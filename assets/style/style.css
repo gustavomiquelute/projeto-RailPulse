@@ -1,0 +1,104 @@
+ :root {
+    --cor-fundo: #f4f7f6;
+    --cor-texto: #333333;
+    --cor-detalhe: #1a2d4b;
+    --cor-erro: #d9534f;
+    --cor-sucesso: #5cb85c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+main {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-bottom-color: var(--cor-detalhe);
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: 1px solid var(--cor-detalhe);
+    background-color: var(--cor-detalhe);
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: var(--cor-detalhe);
+}
+
+.toggle {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.toggle:hover {
+    text-decoration: underline;
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.erro { color: var(--cor-erro); text-align: center; }
+.sucesso { color: var(--cor-sucesso); text-align: center; }
