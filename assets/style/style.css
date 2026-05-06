@@ -95,10 +95,8 @@ button:hover {
     text-decoration: underline;
 }
 
-#mensagem {
-    margin-top: 15px;
-    font-size: 0.85rem;
-}
+
+
 
 .erro { color: var(--cor-erro); text-align: center; }
 .sucesso { color: var(--cor-sucesso); text-align: center; }

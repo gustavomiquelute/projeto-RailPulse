@@ -18,30 +18,17 @@ document.getElementById("form").onsubmit = (e) => {
         return;
     }
 
-    if (cadastro) {
-        localStorage.setItem(email, senha);
-        mensagem.innerHTML = "<div class='sucesso'><p>Cadastrado com sucesso</p></div>";
+    let salva = localStorage.getItem(email);
+
+    let loginmestre = (email === "admin@gmail.com" && senha === "1234");
+    let loginusuario = (salva !== null && salva === senha);
+
+    if (loginmestre || loginusuario) {
+        mensagem.innerHTML = "<div class='sucesso'><p>Login com sucesso</p></div>";
     } else {
-        let salva = localStorage.getItem(email);
-        if (salva === senha) {
-            mensagem.innerHTML = "<div class='sucesso'><p>Login com sucesso</p></div>";
-        } else {
-            mensagem.innerHTML = "<div class='erro'><p>Dados Incorretos</p></div>";
-        }
+        mensagem.innerHTML = "<div class='erro'><p>Dados incorretos</p></div>";
     }
-    
-    if (cadastro) {
-        localStorage.setItem(email, senha);
-        mensagem.innerHTML = "<div class='sucesso'><p>Cadastrado com sucesso</p></div>";
-    } else {
-        let salva = localStorage.getItem(email);
-        
-        if ((email === "admin@admin.com" && senha === "1234") || salva === senha) {
-            mensagem.innerHTML = "<div class='sucesso'><p>Login com sucesso</p></div>";
-        } else {
-            mensagem.innerHTML = "<div class='erro'><p>Dados Incorretos</p></div>";
-        }
-    }
+
     document.getElementById("form").reset();
 
 }
