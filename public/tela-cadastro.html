@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="../assets/style/dashboard.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header class="topbar">
+            <a href="#" id="btn-sair">SAIR</a>
+        </header>
+
+        <aside class="sidebar">
+            <div class="menu-title">Menu</div>
+            <ul>
+                <li><a href="dashboard.html">PAINEL</a></li>
+                <li><a href="#">SENSORES</a></li>
+                <li><a href="#">TRENS</a></li>
+                <li><a href="#">ROTAS</a></li>
+                <li><a href="#">RELATÓRIOS</a></li>
+                <li><a href="tela-cadastro.html" class="active">USUÁRIOS</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2 class="page-title">SISTEMA DE CADASTROS - USUÁRIOS</h2>
+
+            <div class="section-title light">DADOS DO USUÁRIO</div>
+            <form id="form-cadastro">
+                <div class="form-group">
+                    <label style="font-size: 0.7rem; font-weight: bold;">NOME COMPLETO</label>
+                    <input type="text" id="cad-nome" placeholder="Ex: João da Silva" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label style="font-size: 0.7rem; font-weight: bold;">MATRÍCULA</label>
+                        <input type="text" id="cad-matricula" placeholder="Ex: 4429" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">CARGO</label>
+                        <select id="cad-cargo" required>
+                            <option value="">Selecione um cargo</option>
+                            <option value="admin">Administrador</option>
+                            <option value="funcionario">Funcionário</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label style="font-size: 0.7rem; font-weight: bold;">E-MAIL</label>
+                    <input type="email" id="cad-email" placeholder="exemplo@empresa.com.br" required>
+                </div>
+
+                <div class="form-group">
+                    <label style="font-size: 0.7rem; font-weight: bold;">SENHA</label>
+                    <input type="password" id="cad-senha" placeholder="Senha do funcionário" required>
+                </div>
+
+                <div class="buttons-row">
+                    <button type="submit" class="btn btn-primary" id="btn-cadastrar">CADASTRAR NOVO</button>
+                    <button type="button" class="btn btn-secondary">SALVAR ALTERAÇÕES</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="../script/cadastro.js"></script>
+
+</body>
+
+</html>
