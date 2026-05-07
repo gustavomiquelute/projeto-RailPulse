@@ -1,0 +1,136 @@
+/* Estilo isolado com prefixos lp- */
+
+#lp-page {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+.lp-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #eee;
+}
+
+.lp-logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.lp-logo span {
+    color: #0000cd;
+}
+
+.lp-btn-nav {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: 2px solid #000;
+    padding: 10px 25px;
+    transition: all 0.3s;
+}
+
+.lp-btn-nav:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.lp-hero {
+    padding: 100px 8%;
+    background: linear-gradient(135deg, #f4f7f6 0%, #ffffff 100%);
+    text-align: left;
+}
+
+.lp-title-impact {
+    font-size: 3.5rem;
+    max-width: 700px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.lp-description-text {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.lp-about {
+    padding: 80px 8%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.lp-section-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #0000cd;
+}
+
+.lp-about-paragraph {
+    font-size: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.lp-cta-button {
+    display: inline-block;
+    padding: 20px 45px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+    background-color: #0000cd;
+    color: #fff;
+    border: none;
+}
+
+.lp-cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.lp-features {
+    display: flex;
+    gap: 30px;
+    padding: 100px 8%;
+}
+
+.lp-feature-card {
+    flex: 1;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+.lp-card-title {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+    color: #0000cd;
+    font-weight: 800;
+}
+
+.lp-card-text {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.lp-footer {
+    padding: 60px 8%;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .lp-features { flex-direction: column; }
+    .lp-title-impact { font-size: 2.5rem; }
+    .lp-about-paragraph { font-size: 1.1rem; }
+}
